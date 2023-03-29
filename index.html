@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quote machine</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,200&family=Roboto:wght@100;300;400&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="./main.js"></script>
+    <script
+      src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"
+      defer
+    ></script>
+  </head>
+
+  <body id="container-fluid">
+    <div id="quote-box">
+      <h1
+        id="text"
+        contenteditable="true"
+        title="Write your own quote and share with your friends :)!"
+      ></h1>
+      <p id="author" contenteditable="true"></p>
+      <div id="button-box">
+        <a
+          id="tweet-quote"
+          title="Tweet this quote!"
+          target="_blank"
+          href="twitter.com/intent/tweet"
+          >Tweet
+        </a>
+        <button id="new-quote" class="new-quote">
+          <span>New Quote</span>
+        </button>
+      </div>
+    </div>
+    <div class="footer">
+      <a href="https://github.com/chellysA" id="contact">by Chellys</a>
+    </div>
+  </body>
+</html>

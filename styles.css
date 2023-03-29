@@ -1,0 +1,62 @@
+#quote-box {
+  background-color: rgba(252, 252, 252, 0.382);
+  backdrop-filter: blur(5px);
+  width: 500px;
+  height: 300px;
+  margin: auto;
+  border-radius: 3%;
+  padding: 15px;
+}
+#container-fluid {
+  margin-top: 50px;
+}
+#text {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 27px;
+}
+#author {
+  text-align: right;
+  font-style: italic;
+  font-family: "Roboto", sans-serif;
+}
+.new-quote {
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  color: rgb(240, 229, 229);
+  background-color: rgba(82, 78, 78, 0.328);
+  font-size: 17px;
+  border: none;
+  font-weight: 700;
+  width: 100px;
+  height: 25px;
+  border-radius: 5px;
+  margin-left: 155px;
+}
+.new-quote:hover {
+  background-color: rgba(215, 63, 177, 0.429);
+}
+
+#button-box {
+  position: fixed;
+  top: 215px;
+  margin-top: 50px;
+}
+a {
+  width: 30px;
+  color: rgb(20, 51, 74);
+}
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+.footer {
+  text-align: center;
+  margin-top: 10px;
+}
+#contact {
+  color: rgb(67, 65, 65);
+}
