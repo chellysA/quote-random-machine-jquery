@@ -47,11 +47,16 @@ const randomSelection = () => {
   let quote = quotes[randomIndexQuote];
   return quote;
 };
+
 const changeQuote = () => {
   let randomQuote = randomSelection();
-  $("#text").html(randomQuote.quote);
-  $("#author").html(randomQuote.cita);
-  $("#container-fluid").css("background", randomQuote.bg);
+  $("html").fadeOut(500);
+  setTimeout(() => {
+    $("#text").html(randomQuote.quote);
+    $("#author").html(randomQuote.cita);
+  }, 600);
+  $("html").css("background", randomQuote.bg);
+  $("html").fadeIn(500);
 };
 
 $(document).ready(function () {
