@@ -14,7 +14,7 @@ const quotes = [
     quote:
       "Por que si perdonais a los hombres sus ofensas, os perdonará también a vosotros vuestro Padre celestial.",
     cita: "Mateo 6:14",
-    bg: "url('./assets/fondo2.jpg')",
+    bg: "url('./assets/thumb.jpg')",
   },
   {
     quote:
@@ -41,11 +41,19 @@ const quotes = [
   },
 ];
 
+let indexPrev;
+
 const randomSelection = () => {
   let quotesLength = quotes.length - 1; // resto uno para que se iguale el length al index del objeto "quotes"
   let randomIndexQuote = Math.round(Math.random() * quotesLength);
-  let quote = quotes[randomIndexQuote];
-  return quote;
+
+  if (randomIndexQuote == indexPrev) {
+    return randomSelection();
+  } else {
+    let quote = quotes[randomIndexQuote];
+    indexPrev = randomIndexQuote;
+    return quote;
+  }
 };
 
 const changeQuote = () => {
