@@ -2,7 +2,7 @@ const quotes = [
   {
     quote: "Todo lo puedo en Cristo que me fortalece.",
     cita: "Flipenses 4:13",
-    bg: "url('./assets/mar.webp')",
+    bg: "url('./assets/img.jpg')",
   },
   {
     quote:
