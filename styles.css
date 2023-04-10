@@ -40,6 +40,7 @@
 #button-box {
   position: fixed;
   top: 215px;
+  left: 58px;
   margin-top: 50px;
 }
 a {
@@ -59,4 +60,24 @@ a:hover {
 }
 #contact {
   color: rgb(67, 65, 65);
+}
+@media (max-width: 425px) {
+  #quote-box {
+    width: 270px;
+    height: 300px;
+    margin: auto;
+  }
+  #container-fluid {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  #text {
+    font-size: 22px;
+  }
+  #button-box {
+    position: fixed;
+    top: 220px;
+    left: 20px;
+    margin-top: 50px;
+  }
 }
